@@ -47,11 +47,6 @@ body {
     clear: both;
   }
 
-  .comment {
+.comment {
     padding-top: 10px;
-  }
-
-  .img {
-    border-radius: 20px;
-    border-color: white;
   }

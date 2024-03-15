@@ -39,7 +39,7 @@
         </div>
       
         <div class="column right">
-            <h2 style="padding-bottom: 50px; text-align: center; font-size: 35px;"> Rating: 4.5 french fries </h2>
+            <h2 style="padding-bottom: 50px; text-align: center; font-size: 35px;"> Rating: 4.5 stars </h2>
             <h2> Helpful stats: </h2>
                 <p> blah blah stats </p>
             <h2> Top tags: </h2>
@@ -50,13 +50,25 @@
 
     <div class="column side">
         <h3> Filters </h3>
-        <label class="switch"> Filter 1 </label>
+        <button type="button" class="btn btn-light btn-sm"> Deselect all </button>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked"> Filter 1 </label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked"> Filter 2 </label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked"> Filter 3 </label>
+        </div>
     </div>
 
     <div class="column middle bg-danger">
 
         <div class="row">
-            <button type="button"> Add your rating </button>
+            <button class="btn btn-dark col-10 mx-auto" type="button"> Add your rating </button>
         </div>
 
         <div class="comment">
@@ -76,6 +88,7 @@
     <div class="column side">
         <h3> Tags </h3>
     </div>
+
 
 
 
