@@ -27,7 +27,7 @@ export default function Search() {
     >
           <Autocomplete
 
-            id="country-select-demo"
+            id="prof-select-demo"
             sx={{ width: 300 }}
             options={profs}
             value={value}
@@ -60,6 +60,7 @@ export default function Search() {
 // GET REQUEST FROM YOUR BACKEND to get all the professor information { Label, page, reviews}
 // fetch("http://localhost:8000/professors")
 const profs = [
+  {label: 'Select a professor', page:'/NoPage'},
   {label: 'Barry Dorr', page:'/Barrydorr'},
   {label: 'Ugur Dogan', page:'/Ugurdogan'},
   {label: 'Parisa Kaveh', page:'/Parisakaveh'},

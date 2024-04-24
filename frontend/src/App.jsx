@@ -26,7 +26,13 @@ const professors = [
     },
     {
         fullName: "Parisa Kaveh", description: "PhD", path: "/parisakaveh"
-    }
+    },
+    {
+        fullName: "Barry Dorr", description: "PhD", path: "/barrydorr"
+    },
+    {
+        fullName: "Ying-Khai Teh", description: "PhD", path: "/yingkhaiteh"
+    },
 ]
 
 function App() {
