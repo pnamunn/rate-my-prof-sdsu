@@ -8,7 +8,7 @@ const About = () => {
                         Welcome to RateMySDSU Professor, a website for rating your experiences with professors.
                     </p>
                 </section>
-                <section className="container">
+                <section className="container2">
                     <h3> Website Overview</h3>
                     <p>
                     We are SDSU students making a ratemyprof website for SDSU professors. 
@@ -18,7 +18,7 @@ const About = () => {
 
                     
                 </section>
-                <section className="container">
+                <section className="container2">
                     
 
                     <h3>Technologies Used</h3>
