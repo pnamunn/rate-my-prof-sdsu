@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 
 
-const Professor = ({fullName, description, imageLink}) => {
+const Professor = ({fullName, description, imageLink, credentials}) => {
     // get professor by id 
     // { label: xxx, id: xxx, "reviews"} 
 
@@ -14,17 +14,26 @@ const Professor = ({fullName, description, imageLink}) => {
     return (
         <>
         <section className='container'>
-            {/* <Grid container spacing={2}>
-                <Grid item xs={8} md={6} lg={4}> */}
+            
                 <Grid
                 container
-                spacing={0}
-                direction="column"
-                alignItems="center"
-                justifyContent="center"
+                spacing={1}
+                
                 >
-                    <Avatar alt={fullName} src={imageLink} sx={{ width: 150, height: 150 }}/>
-                    <h2>{fullName}</h2>
+                    <Grid item xs={6}>
+                        <Avatar alt={fullName} src={imageLink} sx={{ width: 150, height: 150 }}/>
+                    </Grid> 
+                    <Grid item xs={6}>
+                        <h2>{fullName}</h2>
+                        <h2>{credentials}</h2>
+                    </Grid>
+                    <Grid
+                    container
+                    spacing={1}
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    >
                     <p>
                         {description}
                     </p>
@@ -36,6 +45,7 @@ const Professor = ({fullName, description, imageLink}) => {
                     <h3>
                         Existing Reviews
                     </h3>
+                    </Grid>
                 </Grid>
                 {/* <Grid item xs={4} md={6} lg={8}>
                     <h2>{fullName}</h2>

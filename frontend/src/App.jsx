@@ -19,16 +19,33 @@ const queryClient = new QueryClient({
 
 const professors = [
     {
-        fullName: "Ugur Emre Dogan", description: "Computer Engineering Professor. Teaches the Database & Web Development class COMPE561 and Computer Networks class COMPE560 ", path:"/ugurdogan", imageLink:"/ugurdogan.jpg"
+        fullName: "Ugur Emre Dogan",
+        description: "Computer Engineering Professor. Professor Dogan teaches the Database & Web Development class COMPE561 and Computer Networks class COMPE560. ",
+        path:"/ugurdogan",
+        imageLink:"/ugurdogan.jpg",
+        credentials:"MS"
+
     },
     {
-        fullName: "Parisa Kaveh", description: "Electrical Engineering Professor.", path: "/parisakaveh", imageLink:"/parisakaveh.jpg" 
+        fullName: "Parisa Kaveh",
+        description: "Electrical Engineering Professor. Professor Kaveh teaches the circuit analysis and control systems classes, EE420 and EE210.",
+        path: "/parisakaveh",
+        imageLink:"/parisakaveh.jpg",
+        credentials:"Phd" 
     },
     {
-        fullName: "Barry Dorr", description: "Electrical Engineering Professor", path: "/barrydorr", imageLink:"/laser_eyes_dorr.jpeg"
+        fullName: "Barry Dorr", 
+        description: "Electrical Engineering Professor. Professor Dorr teaches the Electrical & Computer Engineering Senior Design courses, COMPE491/2 and EE491/2.", 
+        path: "/barrydorr", 
+        imageLink:"/laser_eyes_dorr.jpeg",
+        credentials:"MS"
     },
     {
-        fullName: "Ying-Khai Teh", description: "PhD", path: "/yingkhaiteh", imageLink:"/teh.jpg"
+        fullName: "Ying-Khai Teh", 
+        description: "Electrical Engineering Profesor. Professor Teh teaches EE330 and COMPE572.", 
+        path: "/yingkhaiteh", 
+        imageLink:"/teh.jpg",
+        credentials:"PhD"
     },
 ]
 
@@ -42,7 +59,7 @@ function App() {
                         <Route path="about" element={<About />} />
                         <Route path="support" element={<Support />} />
                         {professors.map(professor => (
-                            <Route key={professor.path} path={professor.path} element={<Professor fullName={professor.fullName} description={professor.description} imageLink={professor.imageLink} />} />
+                            <Route key={professor.path} path={professor.path} element={<Professor fullName={professor.fullName} description={professor.description} imageLink={professor.imageLink} credentials={professor.credentials}/>} />
                         ))
                         
                         }
