@@ -22,11 +22,17 @@ const queryClient = new QueryClient({
 
 const professors = [
     {
-        fullName: "Ugur Dogan", description: "Professor", path:"/ugurdogan"
+        fullName: "Ugur Dogan", description: "Professor", path:"/ugurdogan", imageLink:"/ugurdogan.jpg"
     },
     {
-        fullName: "Parisa Kaveh", description: "PhD", path: "/parisakaveh"
-    }
+        fullName: "Parisa Kaveh", description: "PhD", path: "/parisakaveh", imageLink:"/parisakaveh.jpg" 
+    },
+    {
+        fullName: "Barry Dorr", description: "PhD", path: "/barrydorr", imageLink:"/laser_eyes_dorr.jpeg"
+    },
+    {
+        fullName: "Ying-Khai Teh", description: "PhD", path: "/yingkhaiteh", imageLink:"/teh.jpg"
+    },
 ]
 
 function App() {
@@ -39,7 +45,7 @@ function App() {
                         <Route path="about" element={<About />} />
                         <Route path="support" element={<Support />} />
                         {professors.map(professor => (
-                            <Route key={professor.path} path={professor.path} element={<Professor fullName={professor.fullName} description={professor.description} />} />
+                            <Route key={professor.path} path={professor.path} element={<Professor fullName={professor.fullName} description={professor.description} imageLink={professor.imageLink} />} />
                         ))
                         
                         }
