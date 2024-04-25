@@ -6,10 +6,7 @@ import Support from './pages/Support';
 import NoPage from './pages/NoPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import Barrydorr from './pages/Barrydorr';
-import Ugurdogan from './pages/Ugurdogan';
-import Parisakaveh from './pages/Parisakaveh';
-import Yingkhaiteh from './pages/Yingkhaiteh';
+
 import Professor from './components/Professor';
 
 const queryClient = new QueryClient({
@@ -22,13 +19,13 @@ const queryClient = new QueryClient({
 
 const professors = [
     {
-        fullName: "Ugur Dogan", description: "Professor", path:"/ugurdogan", imageLink:"/ugurdogan.jpg"
+        fullName: "Ugur Emre Dogan", description: "Computer Engineering Professor. Teaches the Database & Web Development class COMPE561 and Computer Networks class COMPE560 ", path:"/ugurdogan", imageLink:"/ugurdogan.jpg"
     },
     {
-        fullName: "Parisa Kaveh", description: "PhD", path: "/parisakaveh", imageLink:"/parisakaveh.jpg" 
+        fullName: "Parisa Kaveh", description: "Electrical Engineering Professor.", path: "/parisakaveh", imageLink:"/parisakaveh.jpg" 
     },
     {
-        fullName: "Barry Dorr", description: "PhD", path: "/barrydorr", imageLink:"/laser_eyes_dorr.jpeg"
+        fullName: "Barry Dorr", description: "Electrical Engineering Professor", path: "/barrydorr", imageLink:"/laser_eyes_dorr.jpeg"
     },
     {
         fullName: "Ying-Khai Teh", description: "PhD", path: "/yingkhaiteh", imageLink:"/teh.jpg"
@@ -49,10 +46,7 @@ function App() {
                         ))
                         
                         }
-                        {/* <Route path="Barrydorr" element={<Barrydorr />} /> */}
-                        {/* <Route path="Ugurdogan" element={<Professor fullName="Ugur Dogan" description={"PRofessor"} />} /> */}
-                        {/* <Route path="Parisakaveh" element={<Parisakaveh />} /> */}
-                        {/* <Route path="Yingkhaiteh" element={<Yingkhaiteh />} /> */}
+
                         <Route path="*" element={<NoPage />} />
                     </Route>
                 </Routes>
