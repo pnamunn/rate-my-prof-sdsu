@@ -32,7 +32,7 @@ const Professor = ({fullName, description, imageLink}) => {
                     <BasicRating/>
                     
                     <Reviewform/>
-                    <Button variant="contained">Enter</Button>
+                    <Button onClick={() => {alert("Review submitted!") }} variant="contained">Enter</Button>
                     <h3>
                         Existing Reviews
                     </h3>
