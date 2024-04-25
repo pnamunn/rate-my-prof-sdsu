@@ -13,39 +13,39 @@ const Professor = ({fullName, description, imageLink}) => {
     // fetch("http://localhost:8000/professor/id")
     return (
         <>
-        <section className="container">
+        <section className='container'>
+            {/* <Grid container spacing={2}>
+                <Grid item xs={8} md={6} lg={4}> */}
+                <Grid
+                container
+                spacing={0}
+                direction="column"
+                alignItems="center"
+                justifyContent="center"
+                >
+                    <Avatar alt={fullName} src={imageLink} sx={{ width: 150, height: 150 }}/>
+                    <h2>{fullName}</h2>
+                    <p>
+                        {description}
+                    </p>
+                    <h3>Give a rating & review!</h3>
+                    <BasicRating/>
                     
-                <Avatar alt={fullName} src={imageLink} sx={{ width: 100, height: 100 }}/>
-                <h2>{fullName}</h2>
-                <p>
-                    {description}
-                </p>
-                
+                    <Reviewform/>
+                    <Button onClick={() => {alert("Review submitted!") }} variant="contained">Enter</Button>
+                    <h3>
+                        Existing Reviews
+                    </h3>
+                </Grid>
+                {/* <Grid item xs={4} md={6} lg={8}>
+                    <h2>{fullName}</h2>
+                    <p>
+                        {description}
+                    </p>
+                </Grid> */}
+            {/* </Grid> */}
         </section>
-        <section className="container">
-            <Grid
-            container
-            spacing={0}
-            direction="column"
-            alignItems="center"
-            justifyContent="center"
-            >
-            <h3>Give a rating & review!</h3>
-            <BasicRating/>
-            
-            <Reviewform/>
-            <Button variant="contained">Enter</Button>
-            <h3>
-                Existing Reviews
-            </h3>
-            </Grid>
-        </section>
-        {/* <div className="container">
-            <h1>{fullName}</h1>
-            <h2>{description}</h2>
-            
-            
-        </div> */}
+        
         </>
     )
 }
