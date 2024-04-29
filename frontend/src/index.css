@@ -19,17 +19,22 @@ form input[type="email"] {
   width: 300px; 
 }
 .btn {
-  background-color: #0985f2; 
-  border: none; 
+  background-color: #0985f2;
+  border: none;
   color: white;
-  padding: 10px 20px; 
-  text-align: center; 
+  padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
-  display: inline-block; 
-  font-size: 16px; 
-  margin: 4px 2px; 
-  cursor: pointer; 
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
   border-radius: 4px;
+  transition: background-color 0.1s ease; /* Add a transition for smooth color change */
+}
+
+.btn:hover {
+  background-color: #005aa9; /* Change the background color on hover */
 }
 form {
   font-family: Andale Mono, monospace;
@@ -88,6 +93,9 @@ form {
  
 }
 
+h1 {
+  text-align: center;
+}
 
 h2 {
   text-align: center;

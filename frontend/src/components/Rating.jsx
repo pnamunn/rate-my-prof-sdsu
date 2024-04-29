@@ -4,7 +4,7 @@ import Rating from '@mui/material/Rating';
 import Grid from '@mui/material/Grid';
 
 export default function BasicRating() {
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(0);
 
   return (
         <Grid
@@ -23,7 +23,9 @@ export default function BasicRating() {
             >
             
             <Rating
-                name="simple-controlled"
+                name="half-rating"
+                precision={0.5}
+                size="large"
                 value={value}
                 onChange={(event, newValue) => {
                 setValue(newValue);
