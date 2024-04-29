@@ -23,7 +23,7 @@ const professors = [
         description: "Computer Engineering Professor. Professor Dogan teaches the Database & Web Development class COMPE561 and Computer Networks class COMPE560. ",
         path:"/ugurdogan",
         imageLink:"/ugurdogan.jpg",
-        credentials:"MS"
+        credentials:"MSEE"
 
     },
     {
@@ -31,14 +31,14 @@ const professors = [
         description: "Electrical Engineering Professor. Professor Kaveh teaches the circuit analysis and control systems classes, EE420 and EE210.",
         path: "/parisakaveh",
         imageLink:"/parisakaveh.jpg",
-        credentials:"Phd" 
+        credentials:"PhD" 
     },
     {
         fullName: "Barry Dorr", 
         description: "Electrical Engineering Professor. Professor Dorr teaches the Electrical & Computer Engineering Senior Design courses, COMPE491/2 and EE491/2.", 
         path: "/barrydorr", 
         imageLink:"/laser_eyes_dorr.jpeg",
-        credentials:"MS"
+        credentials:"MSEE"
     },
     {
         fullName: "Ying-Khai Teh", 
@@ -47,6 +47,13 @@ const professors = [
         imageLink:"/teh.jpg",
         credentials:"PhD"
     },
+    {
+        fullName: "Kenneth Arnold",
+        description: "Computer Engineering Professor. Professor Arnold teaches COMPE271 and COMPE 475",
+        path: "/kennetharnold",
+        imageLink:"arnold.jpg",
+        credentials: "MSEE"
+    }
 ]
 
 function App() {
