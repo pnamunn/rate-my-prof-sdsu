@@ -53,6 +53,34 @@ const professors = [
         path: "/kennetharnold",
         imageLink:"arnold.jpg",
         credentials: "MSEE"
+    },
+    {
+        fullName: "Baris Aksanli",
+        description: "Computer Engineering Professor. Professor Aksanli teaches COMPE375 and COMPE571",
+        path: "/barisaksanli",
+        imageLink: "baris.jpg",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Ashkan Ashrafi",
+        description: "Electrical Engineering Professor. Professor Ashrafi teaches EE410 and EE450",
+        path: "/ashkanashrafi",
+        imageLink: "ashrafi.jpg",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Amir Alimohammad",
+        description: "Computer Engineering Professor. Professor Alimohammad teaches COMPE 470",
+        path: "/amiralimohammad",
+        imageLink: "alimohammad.jpg",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Hakan Toreyin",
+        description: "Electrical Engineering Professor. Professor Toreyin teaches (not sure)",
+        path: "/hakantoreyin",
+        imageLink: "toreyin.jpg",
+        credentials: "PhD"
     }
 ]
 

@@ -65,5 +65,9 @@ const profs = [
   {label: 'Ugur Dogan', page:'/Ugurdogan'},
   {label: 'Parisa Kaveh', page:'/Parisakaveh'},
   {label: 'Ying-Khai Teh', page:'/yingkhaiteh'},
-  {label: 'Kenneth Arnold', page: '/kennetharnold'}
+  {label: 'Kenneth Arnold', page: '/kennetharnold'},
+  {label: 'Baris Aksanli', page: '/barisaksanli'},
+  {label: 'Ashkan Ashrafi', page: '/ashkanashrafi'},
+  {label: 'Amir Alimohammad', page: '/amiralimohammad'},
+  {label: 'Hakan Toreyin', page: '/hakantoreyin'}
 ];
