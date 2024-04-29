@@ -81,6 +81,13 @@ const professors = [
         path: "/hakantoreyin",
         imageLink: "toreyin.jpg",
         credentials: "PhD"
+    },
+    {
+        fullName: "Ke Huang",
+        description: "Computer Engineering Professor. Professor Huang teaches COMPE270 and COMPE470L",
+        path: "/kehuang",
+        imageLink: "kehuang.jpg",
+        credentials: "PhD"
     }
 ]
 
