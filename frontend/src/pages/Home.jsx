@@ -9,9 +9,8 @@ const Home = () => {
             
                 <div className="container">
                     
-                    
-                    <h2 >Search for a professor!
-                    </h2>
+                    <h1>Welcome to Rate My SDSU Professor</h1>
+                    <h3>Search for a professor</h3>
                     <Search/>
                 </div>
             
