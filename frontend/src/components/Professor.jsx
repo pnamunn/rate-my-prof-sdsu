@@ -4,6 +4,7 @@ import Reviewform from '../components/Reviewform';
 import BasicRating from '../components/Rating';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Reviews from '../components/Reviews'
 
 
 const Professor = ({fullName, description, imageLink, credentials}) => {
@@ -42,9 +43,8 @@ const Professor = ({fullName, description, imageLink, credentials}) => {
                     
                     <Reviewform/>
                     <Button onClick={() => {alert("Review submitted!") }} variant="contained">Enter</Button>
-                    <h3>
-                        Existing Reviews
-                    </h3>
+                    <Reviews/>
+                    
                     </Grid>
                 </Grid>
                 {/* <Grid item xs={4} md={6} lg={8}>

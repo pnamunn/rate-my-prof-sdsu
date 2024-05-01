@@ -4,18 +4,44 @@ import Layout from './pages/Layout';
 import About from './pages/About';
 import Support from './pages/Support';
 import NoPage from './pages/NoPage';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+// import Temp from './components/Temp'
 
 import Professor from './components/Professor';
 
-const queryClient = new QueryClient({
-    defaultOptions: {
-        queries: {
-            retry: 0,
-        },
-    },
-});
+const queryClient = new QueryClient()
+
+
+function App() {
+    return (
+        <QueryClientProvider client={queryClient}>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<Home />} />
+                        <Route path="about" element={<About />} />
+                        <Route path="support" element={<Support />} />
+                        {professors.map(professor => (
+                            <Route key={professor.path} path={professor.path} element={<Professor fullName={professor.fullName} description={professor.description} imageLink={professor.imageLink} credentials={professor.credentials}/>} />
+                        ))
+                        
+                        }
+                        {/* <Route path='temp' element={<Temp />} /> */}
+
+                        
+
+                        <Route path="*" element={<NoPage />} />
+                    </Route>
+                </Routes>
+            </Router>
+            <ReactQueryDevtools />
+        </QueryClientProvider>
+    );
+}
+
+
+export default App;
 
 const professors = [
     {
@@ -90,29 +116,3 @@ const professors = [
         credentials: "PhD"
     }
 ]
-
-function App() {
-    return (
-        <QueryClientProvider client={queryClient}>
-            <Router>
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Home />} />
-                        <Route path="about" element={<About />} />
-                        <Route path="support" element={<Support />} />
-                        {professors.map(professor => (
-                            <Route key={professor.path} path={professor.path} element={<Professor fullName={professor.fullName} description={professor.description} imageLink={professor.imageLink} credentials={professor.credentials}/>} />
-                        ))
-                        
-                        }
-
-                        <Route path="*" element={<NoPage />} />
-                    </Route>
-                </Routes>
-            </Router>
-            <ReactQueryDevtools />
-        </QueryClientProvider>
-    );
-}
-
-export default App;
