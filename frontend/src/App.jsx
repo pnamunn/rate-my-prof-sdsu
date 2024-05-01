@@ -48,7 +48,7 @@ const professors = [
         fullName: "Ugur Emre Dogan",
         description: "Computer Engineering Professor. Professor Dogan teaches the Database & Web Development class COMPE561 and Computer Networks class COMPE560. ",
         path:"/ugurdogan",
-        imageLink:"/ugurdogan.jpg",
+        imageLink:"/ugurdogan.jpeg",
         credentials:"MSEE"
 
     },
@@ -70,7 +70,7 @@ const professors = [
         fullName: "Ying-Khai Teh", 
         description: "Electrical Engineering Profesor. Professor Teh teaches EE330 and COMPE572.", 
         path: "/yingkhaiteh", 
-        imageLink:"/teh.jpg",
+        imageLink:"/jediteh.png",
         credentials:"PhD"
     },
     {

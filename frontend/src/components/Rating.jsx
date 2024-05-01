@@ -24,7 +24,7 @@ export default function BasicRating() {
             
             <Rating
                 name="half-rating"
-                precision={0.5}
+                precision={1}
                 size="large"
                 value={value}
                 onChange={(event, newValue) => {

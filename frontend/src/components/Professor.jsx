@@ -1,17 +1,23 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Reviewform from '../components/Reviewform';
+import ReviewBox from '../components/Reviews';
 import BasicRating from '../components/Rating';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Reviews from '../components/Reviews'
+import AddReview from '../components/addReview';
+// import { useState, useEffect } from 'react';
 
 
 const Professor = ({fullName, description, imageLink, credentials}) => {
-    // get professor by id 
-    // { label: xxx, id: xxx, "reviews"} 
 
-    // fetch("http://localhost:8000/professor/id")
+    const addReview = (title, body) => {
+    
+    };
+     
+
+
     return (
         <>
         <section className='container'>
@@ -41,19 +47,17 @@ const Professor = ({fullName, description, imageLink, credentials}) => {
                     <h3>Give a rating & review!</h3>
                     <BasicRating/>
                     
-                    <Reviewform/>
-                    <Button onClick={() => {alert("Review submitted!") }} variant="contained">Enter</Button>
+                    
+                    <Reviewform add={addReview}/>
+                    <AddReview/>
                     <Reviews/>
                     
+
+                    
+                    
+
                     </Grid>
                 </Grid>
-                {/* <Grid item xs={4} md={6} lg={8}>
-                    <h2>{fullName}</h2>
-                    <p>
-                        {description}
-                    </p>
-                </Grid> */}
-            {/* </Grid> */}
         </section>
         
         </>

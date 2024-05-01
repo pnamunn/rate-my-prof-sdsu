@@ -11,9 +11,13 @@ import { useGetReviews } from "../hooks/useGetReview";
 const Reviews = () => {
     const { data: reviews, error, isLoading } = useGetReviews();
 
+    
+
     if (isLoading) return <p>Loading...</p>;
 
     if (error) return <p>Some error happened</p>;
+
+    //const data = data.filter((data) => data.professorName.includes({fullName}))
 
     return (
         <>
