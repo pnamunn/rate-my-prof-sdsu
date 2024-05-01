@@ -47,7 +47,7 @@ const AddReview = () => {
                 </div>
                 <div>
                     <label htmlFor="rating">
-                        Rating <br />
+                        Rating (1-5)<br />
                     </label>
                     <input
                         id="rating"
