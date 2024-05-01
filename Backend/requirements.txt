@@ -3,3 +3,5 @@ djangorestframework
 environs
 psycopg2
 django-cors-headers
+requests
+beautifulsoup4
