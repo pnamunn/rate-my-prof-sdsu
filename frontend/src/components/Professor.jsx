@@ -12,6 +12,8 @@ import AddReview from '../components/addReview';
 
 const Professor = ({fullName, description, imageLink, credentials}) => {
 
+    
+    // const pName = {fullName};
     const addReview = (title, body) => {
     
     };

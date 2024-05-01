@@ -1,9 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useAddReview } from '../hooks/useAddReview';
+// import {pName} from '../components/Professor';
 
 const AddReview = () => {
     const { mutate: addReview, isPending } = useAddReview();
 
+    // const fullName = {pName};
     const handleSubmit = (e) => {
         e.preventDefault();
         const review = e.target.review.value;
@@ -27,6 +29,7 @@ const AddReview = () => {
     return (
         <>
             <h3> Add new review</h3>
+            {/* <h3>{fullName}</h3> */}
 
             <form id="form" onSubmit={handleSubmit}>
                 <div className="form-control">
