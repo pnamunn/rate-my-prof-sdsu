@@ -1,3 +1,6 @@
+import TextField from '@mui/material/TextField';
+import Grid from '@mui/material/Grid';
+
 const Support = () => {
     return (
         <>
@@ -10,27 +13,40 @@ const Support = () => {
                     </p>
                 
                     <form>
-                        <label htmlFor="name">Name</label>
+                        <Grid
+                        container
+                        spacing={2}
+                        direction="column"
+                        alignItems="center"
+                        justifyContent="center"
+                        padding={2}
+                        >
+                        <TextField id="email" label="Enter your email" variant="outlined" />
+                        </Grid>
+                        <Grid
+                        container
+                        spacing={2}
+                        direction="column"
+                        alignItems="center"
+                        justifyContent="center"
+                        padding={2}
+                        >
+                        <TextField id="issue" label="Describe your problem..." variant="outlined" />
+                        </Grid>
                         <br></br>
-                        <input type="text" id="name" name="name" required />
-                        <br></br>
-                        <label htmlFor="email">Email</label>
-                        <br></br>
-                        <input type="email" id="email" name="email" required />
-                        <br></br>
-                        <label htmlFor="message">Message</label>
-                        <br></br>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="4"
-                            required
-                            className="wide-textarea"
-                        ></textarea>
-                        <br></br>
+                        <Grid
+                        container
+                        spacing={2}
+                        direction="column"
+                        alignItems="center"
+                        justifyContent="center"
+                        padding={2}
+                        >
                         <button type="submit" className="btn">
                             Submit
                         </button>
+                        </Grid>
+
                     </form>
                 
                 </section>

@@ -8,7 +8,7 @@ import AddReview from '../components/addReview';
 
 
 const Professor = ({fullName, description, imageLink, credentials}) => {
-     
+    // const profName = {fullName}
     return (
         <>
         <section className='container'>
@@ -38,7 +38,7 @@ const Professor = ({fullName, description, imageLink, credentials}) => {
                     <h3>Give a rating & review!</h3>
                     
                     <AddReview/>
-                    <Reviews/>
+                    <Reviews professorName = {fullName}/>
 
                     </Grid>
                 </Grid>
