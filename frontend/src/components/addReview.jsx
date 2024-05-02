@@ -46,54 +46,38 @@ const AddReview = () => {
             justifyContent="center"
             padding={1}
             >
-                {/* <h3> Add new review</h3> */}
-                {/* <h3>{fullName}</h3> */}
+                
 
                 <form id="form" onSubmit={handleSubmit}>
-                    <div className="form-control">
-                        <label htmlFor="professorName"> Professor's Name</label>
-                        <input
-                            id="professorName"
-                            placeholder="Enter the professor's name..."
-                            type="text"
-                        />
-                    </div>
-                    <grid
-                        container
-                        spacing={0}
-                        direction="column"
-                        alignItems="center"
-                        justifyContent="center"
-                        padding={1}
+                    <Grid
+                    container
+                    spacing={2}
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    padding={2}
                     >
-                    <Box
-                    component="form"
-                    sx={{
-                        '& > :not(style)': { m: 0, width: '45ch'},
-                    }}
-                    noValidate
-                    autoComplete="off"
-                    onSubmit={handleSubmit}
                     
+                        <TextField id="professorName" label="Enter the professor's name..." variant="outlined" />
+                    </Grid>
+                    <Grid
+                    container
+                    spacing={2}
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    padding={2}
                     >
-                        <TextField 
-                            id="review" 
-                            label="Enter your review..." c
-                            variant="outlined"
-                            multiline
-                            rows={3}
-                            onChange={(e) => setText(e.target.value)}
-                        />
+                        <Box
+                        sx={{
+                            '& > :not(style)': { m: 0, width: '37ch'},
+                        }}
+                        >
+                        <TextField id="review" label="Enter your review..." variant="outlined" multiline
+                    rows={3}/>
                     </Box>
-                    </grid>
-                    {/* <div className="form-control">
-                        <label htmlFor="review"> Review</label>
-                        <input
-                            id="review"
-                            placeholder="Enter review of professor..."
-                            type="text"
-                        />
-                    </div> */}
+                    </Grid>
+                    
                     <Grid
                     container
                     spacing={0}
@@ -118,20 +102,19 @@ const AddReview = () => {
                         />
                     </Box>
                     </Grid>
-                    {/* <div>
-                        <label htmlFor="rating">
-                            Rating (1-5)<br />
-                        </label>
-                        <input
-                            id="rating"
-                            placeholder="Enter rating..."
-                            type="number"
-                        />
-                    </div> */}
-
+                    <Grid
+                    container
+                    spacing={0}
+                    direction="column"
+                    alignItems="center"
+                    justifyContent="center"
+                    padding={1}
+                    >
                     <button className="btn" disabled={isPending}>
                         {isPending ? 'Adding Review' : 'Add Review'}
                     </button>
+                    </Grid>
+
                 </form>
             </grid>
         </>
