@@ -17,8 +17,3 @@ class ReviewPost(models.Model):
     
     def __str__(self):
         return self.professorName
-    
-#class ProfessorInfo(models.Model):
-#    professorName = models.CharField(max_length=100)
-#    profilePicture = models.ImageField()
-#    profBio = models.TextField()

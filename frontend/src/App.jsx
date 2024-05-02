@@ -103,7 +103,7 @@ const professors = [
     },
     {
         fullName: "Hakan Toreyin",
-        description: "Electrical Engineering Professor. Professor Toreyin teaches (not sure)",
+        description: "Electrical Engineering Professor.",
         path: "/hakantoreyin",
         imageLink: "toreyin.jpg",
         credentials: "PhD"
