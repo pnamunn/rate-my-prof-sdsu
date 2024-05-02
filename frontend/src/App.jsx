@@ -114,5 +114,95 @@ const professors = [
         path: "/kehuang",
         imageLink: "kehuang.jpg",
         credentials: "PhD"
-    }
+    },
+    {
+        fullName: "A. Ege Engin",
+        description: "Electrical Engineering Professor.",
+        path: "/aegeengin",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Naim Ahmed",
+        description: "Not teaching this semester.",
+        path: "/naimahmed",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Tong Huang",
+        description: "Electrical Engineering Professor teaching EE310.",
+        path: "/tonghuang",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Sunil Kumar",
+        description: "Computer Engineering Professor teaching Compe565.",
+        path: "/sunilkumar",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Saeed Manshadi",
+        description: "Electrical Engineering Professor teaching EE603.",
+        path: "/saeedmanshadi",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Chris Mi",
+        description: "Electrical Engineering Professor teaching EE430.",
+        path: "/chrismi",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Santosh Nagaraj",
+        description: "Electrical Engineering Professor teaching EE458, EE652, EE795.",
+        path: "/santoshnagaraj",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Duy H. N. Nguyen",
+        description: "Electrical Engineering Professor teaching EE200, EE300.",
+        path: "/duyhnnguyen",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Yusuf Ozturk",
+        description: "Not teaching this semester.",
+        path: "/yusufozturk",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Christopher Paolini",
+        description: "Computer Engineering Professor teaching Compe361.",
+        path: "/christopherpaolini",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Tharm Ratnarajah",
+        description: "Electrical Engineering Professor teaching EE558.",
+        path: "/tharmratnarajah",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Reza Sabzehgar",
+        description: "Electrical Engineering Professor teaching EE380, EE684.",
+        path: "/rezasabzehgar",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Mahasweta Sarkar",
+        description: "Not teaching this semester.",
+        path: "/mahaswetasarkar",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Sridhar Seshagiri",
+        description: "Electrical Engineering Professor teaching EE420,EE420L, EE522.",
+        path: "/sridharseshagiri",
+        credentials: "PhD"
+    },
+    {
+        fullName: "Junfei Xie",
+        description: "Computer Engineering Professor teaching Compe260, Compe560.",
+        path: "/junfeixie",
+        credentials: "PhD"
+    },
 ]
