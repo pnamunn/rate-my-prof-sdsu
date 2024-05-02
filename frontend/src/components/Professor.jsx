@@ -1,9 +1,6 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
-import Reviewform from '../components/Reviewform';
-import ReviewBox from '../components/Reviews';
-import BasicRating from '../components/Rating';
-import Button from '@mui/material/Button';
+
 import Grid from '@mui/material/Grid';
 import Reviews from '../components/Reviews'
 import AddReview from '../components/addReview';
@@ -11,15 +8,7 @@ import AddReview from '../components/addReview';
 
 
 const Professor = ({fullName, description, imageLink, credentials}) => {
-
-    
-    // const pName = {fullName};
-    const addReview = (title, body) => {
-    
-    };
      
-
-
     return (
         <>
         <section className='container'>
@@ -47,16 +36,9 @@ const Professor = ({fullName, description, imageLink, credentials}) => {
                         {description}
                     </p>
                     <h3>Give a rating & review!</h3>
-                    {/* <BasicRating/>
                     
-                    
-                    <Reviewform add={addReview}/> */}
                     <AddReview/>
                     <Reviews/>
-                    
-
-                    
-                    
 
                     </Grid>
                 </Grid>

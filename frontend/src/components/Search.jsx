@@ -57,8 +57,7 @@ export default function Search() {
   );
 }
 
-// GET REQUEST FROM YOUR BACKEND to get all the professor information { Label, page, reviews}
-// fetch("http://localhost:8000/professors")
+
 const profs = [
   {label: 'Select a professor', page:'/NoPage'},
   {label: 'Barry Dorr', page:'/Barrydorr'},
