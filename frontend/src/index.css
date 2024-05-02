@@ -31,6 +31,7 @@ form input[type="email"] {
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.1s ease; /* Add a transition for smooth color change */
+  
 }
 
 .btn:hover {
