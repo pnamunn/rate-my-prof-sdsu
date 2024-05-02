@@ -1,8 +1,10 @@
 const Footer = () => {
     return (
-        <footer className="footer">
-            All rights reserved. © 2024 RateMySDSUProfessor
-        </footer>
+        // <div className="footerBackground">
+            <footer className="footer">
+                All rights reserved. © 2024 RateMySDSUProfessor
+            </footer>
+        // </div>
     );
 };
 export default Footer;
