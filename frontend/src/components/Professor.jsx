@@ -47,10 +47,10 @@ const Professor = ({fullName, description, imageLink, credentials}) => {
                         {description}
                     </p>
                     <h3>Give a rating & review!</h3>
-                    <BasicRating/>
+                    {/* <BasicRating/>
                     
                     
-                    <Reviewform add={addReview}/>
+                    <Reviewform add={addReview}/> */}
                     <AddReview/>
                     <Reviews/>
                     
