@@ -31,8 +31,8 @@ const About = () => {
                         
                         <li>React</li>
                         <li>Python</li>
-                        <li>Django</li>
-                        <li>MySQL</li>
+                        <li>Django + Rest Framework</li>
+                        <li>PostgreSQL</li>
                         
                     </ul>
                 </section>
