@@ -4,7 +4,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
-import {useState} from 'react'
+
 
 import Rating from '@mui/material/Rating';
 
@@ -12,7 +12,7 @@ import Rating from '@mui/material/Rating';
 
 const AddReview = () => {
     const { mutate: addReview, isPending } = useAddReview();
-    const [text, setText] = useState('');
+    
     const [rating, setRating] = React.useState(0);
 
     // const fullName = {pName};

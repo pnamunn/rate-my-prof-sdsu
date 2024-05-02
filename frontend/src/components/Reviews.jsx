@@ -1,11 +1,5 @@
 /* This will be the component that renders the existing reviews for a professor */
-import {
-    useQuery,
-    useMutation,
-    useQueryClient,
-    QueryClient,
-    QueryClientProvider,
-  } from '@tanstack/react-query'
+
 import { useGetReviews } from "../hooks/useGetReview";
 
 const Reviews = () => {
